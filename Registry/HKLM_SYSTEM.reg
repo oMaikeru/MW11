@@ -1,12 +1,10 @@
 Windows Registry Editor Version 5.00
 
 ;EDGE SERVICES
-
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\edgeupdate]
 [-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\edgeupdatem]
 
 ;PREFETCH
-
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\Memory Management\PrefetchParameters]
 "EnablePrefetcher"=dword:00000000
 "EnableSuperfetch"=dword:00000000
