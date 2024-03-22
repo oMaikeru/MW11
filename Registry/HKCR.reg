@@ -4,6 +4,7 @@ Windows Registry Editor Version 5.00
 ; becomes
 ;   HKEY_LOCAL_MACHINE\SOFTWARE\Classes\
 
+;CONTEXT MENU
 [HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Drive\shell\change-passphrase]
 "ProgrammaticAccessOnly"=""
 
