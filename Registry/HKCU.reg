@@ -1,19 +1,24 @@
 Windows Registry Editor Version 5.00
 
+;INETCPL
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]
 "1806"=dword:00000000
 
+;ALT TAB
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
 "AltTabSettings"=dword:00000001
 
+;GAMEBAR
 [HKEY_CURRENT_USER\System\GameConfigStore]
 "GameDVR_Enabled"=dword:00000000
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR]
 "AppCaptureEnabled"=dword:00000000
 
+;VOLUME MIXER
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\LowRegistry\Audio\PolicyConfig\PropertyStore]
 
+;VISUAL EFFECTS
 [HKEY_CURRENT_USER\Control Panel\Desktop]
 "FontSmoothing"="2"
 "UserPreferencesMask"=hex:90,12,03,80,10,00,00,00
@@ -35,23 +40,28 @@ Windows Registry Editor Version 5.00
 "EnableAeroPeek"=dword:00000000
 "AlwaysHibernateThumbnails"=dword:00000000
 
+;EXPLORER
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "LaunchTo"=dword:00000001
 "ShowFrequent"=dword:00000000
 "ShowRecent"=dword:00000000
 "HideFileExt"=dword:00000000
 
+;POINTER ACCELERATION
 [HKEY_CURRENT_USER\Control Panel\Mouse]
 "MouseSpeed"="0"
 "MouseThreshold1"="0"
 "MouseThreshold2"="0"
 
+;STICKY KEYS
 [HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys]
 "Flags"="506"
 
+;PRIVACY
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\bluetoothSync]
 "Value"="Deny"
 
+;AUDIO SCHEME
 [HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Audio]
 "UserDuckingPreference"=dword:00000003
 
@@ -139,6 +149,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\AppEvents\Schemes\Apps\sapisvr\PanelSound\.current]
 @=""
 
+;CONTEXT MENU
 [-HKEY_CURRENT_USER\AppEvents\Schemes\Apps\.Default\.Default\.Current]
 
 [-HKEY_CURRENT_USER\AppEvents\Schemes\Apps\sapisvr\DisNumbersSound\.current]
@@ -155,6 +166,7 @@ Windows Registry Editor Version 5.00
 [-HKEY_CURRENT_USER\Software\Policies\Microsoft\PreviousVersions]
 "DisableLocalPage"=-
 
+;PHOTO VIEWER
 [HKEY_CURRENT_USER\SOFTWARE\Classes\.jpg]
 @="PhotoViewer.FileAssoc.Tiff"
 
