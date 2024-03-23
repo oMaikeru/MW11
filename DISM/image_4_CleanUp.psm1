@@ -49,16 +49,9 @@ function image_4_CleanUp {
         "Program Files\Windows Mail",
         "Windows\SysWOW64\MailContactsCalendarSync",
         "Windows\System32\MailContactsCalendarSync",
-        "Windows\assembly\NativeImages_v4.0.30319_32",
-        "Windows\assembly\NativeImages_v4.0.30319_64",
         "Windows\InboxApps",
         "Windows\System32\Recovery\winre.wim",
-        "Windows\System32\BingMaps.dll",
-        "Windows\System32\BingOnlineServices.dll",
         "Windows\WinSxS\amd64_microsoft-windows-onedrive-setup_31bf3856ad364e35_10.0.22621.1_none_86d60ce019ce7baf",
-        "Windows\HelpPane.exe",
-        "Windows\SysWOW64\help.exe",
-        "Windows\System32\help.exe",
         "Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\OneDrive.lnk",
         "Windows\WinSxS\Backup",
         "Program Files\Windows Defender",
@@ -68,7 +61,14 @@ function image_4_CleanUp {
         "Program Data\Microsoft\Windows Defender Advanced Threat Protection",
         "Windows\System32\SecurityHealth",
         "Windows\System32\SecurityCenter",
-        "Windows\System32\smartscreen.exe"
+        "Windows\System32\smartscreen.exe",
+        "Windows\Resources\Themes\aero.theme",
+        "Windows\Resources\Themes\dark.theme",
+        "Windows\Resources\Themes\spotlight.theme",
+        "Windows\Resources\Themes\themeA.theme",
+        "Windows\Resources\Themes\themeB.theme",
+        "Windows\Resources\Themes\themeC.theme",
+        "Windows\Resources\Themes\themeD.theme"
     ) | ForEach-Object {
         Invoke-Command $deleteFiles -ArgumentList "$RootDir\extractWIMImage\$_"
     }
