@@ -13,6 +13,7 @@ function image_3_AppxProvisionedPackage {
         $_.DisplayName -notlike "Microsoft.UI.Xaml.*" -and `
         $_.DisplayName -notlike "Microsoft.VCLibs*" -and `
         $_.DisplayName -notlike "Microsoft.WindowsStore*" -and `
+        $_.DisplayName -notlike "Microsoft.SecHealthUI*" -and `
         $_.DisplayName -notlike "Microsoft.NET.Native.Framework.*" -and `
         $_.DisplayName -notlike "Microsoft.NET.Native.Runtime.*" -and `
         $_.DisplayName -ne "Microsoft.WindowsCalculator" -and `
@@ -43,7 +44,8 @@ function image_3_AppxProvisionedPackage {
         (
             $_.Name -like "Hello.Face*" -or `
             $_.Name -like "App.StepsRecorder*" -or `
-            $_.Name -like "MathRecognizer*" -or `
+            $_.Name -like "Microsoft.Windows.PowerShell.ISE*" -or `
+            $_.Name -like "Microsoft.Wallpapers.Extended*" -or `
             $_.Name -like "OpenSSH.Client*" -or `
             $_.Name -like "Print.Management.Console*" -or `
             $_.Name -like "Microsoft.Windows.WordPad*" -or `
