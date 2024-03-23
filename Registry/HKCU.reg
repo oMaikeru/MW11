@@ -4,10 +4,6 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3]
 "1806"=dword:00000000
 
-;ALT TAB
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
-"AltTabSettings"=dword:00000001
-
 ;GAMEBAR
 [HKEY_CURRENT_USER\System\GameConfigStore]
 "GameDVR_Enabled"=dword:00000000
@@ -17,35 +13,6 @@ Windows Registry Editor Version 5.00
 
 ;VOLUME MIXER
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\LowRegistry\Audio\PolicyConfig\PropertyStore]
-
-;VISUAL EFFECTS
-[HKEY_CURRENT_USER\Control Panel\Desktop]
-"FontSmoothing"="2"
-"UserPreferencesMask"=hex:90,12,03,80,10,00,00,00
-"DragFullWindows"="1"
-
-[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
-"MinAnimate"="0"
-
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"ListviewAlphaSelect"=dword:00000001
-"IconsOnly"=dword:00000000
-"TaskbarAnimations"=dword:00000000
-"ListviewShadow"=dword:00000000
-
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects]
-"VisualFXSetting"=dword:00000003
-
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\DWM]
-"EnableAeroPeek"=dword:00000000
-"AlwaysHibernateThumbnails"=dword:00000000
-
-;EXPLORER
-[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"LaunchTo"=dword:00000001
-"ShowFrequent"=dword:00000000
-"ShowRecent"=dword:00000000
-"HideFileExt"=dword:00000000
 
 ;POINTER ACCELERATION
 [HKEY_CURRENT_USER\Control Panel\Mouse]
@@ -60,6 +27,21 @@ Windows Registry Editor Version 5.00
 ;PRIVACY
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\bluetoothSync]
 "Value"="Deny"
+
+;SMART SCREEN
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\AppHost]
+"EnableWebContentEvaluation"=dword:00000000
+"PreventOverride"=dword:00000000
+
+;THEME
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes]
+"CurrentTheme"="C:\\Windows\\resources\\Themes\\Maikeru.theme"
+"ThemeMRU"="C:\\Windows\\resources\\Themes\\Maikeru.theme;"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize]
+"EnableTransparency"=dword:00000000
+"AppsUseLightTheme"=dword:00000000
+"SystemUsesLightTheme"=dword:00000000
 
 ;AUDIO SCHEME
 [HKEY_CURRENT_USER\Software\Microsoft\Multimedia\Audio]
