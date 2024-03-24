@@ -2,6 +2,14 @@
 Title MW11
 setlocal EnableDelayedExpansion
 
+fltmc >nul 2>&1 || (
+    PowerShell Start -Verb RunAs '%0' 2> nul || (
+        echo error: right-click on the script and select "Run as administrator"
+        pause
+    )
+    exit /b 1
+)
+
 echo "Execution Policy To Unrestricted"
 powershell set-executionpolicy unrestricted -force
 
