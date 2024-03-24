@@ -11,6 +11,10 @@ Windows Registry Editor Version 5.00
 "PromptOnSecureDesktop"=dword:00000000
 "ValidateAdminCodeSignatures"=dword:00000000
 
+;EDGE
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MicrosoftEdgeUpdate.exe]
+"Debugger"="C:\noop.exe"
+
 ;HIDE SETTINGS
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
 "SettingsPageVisibility"="hide:home"
