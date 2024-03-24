@@ -4,13 +4,6 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce]
 "POST INSTALL"="\"C:\\Windows\\Modules\\Script.bat\""
 
-;UAC
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
-"ConsentPromptBehaviorAdmin"=dword:00000000
-"EnableLUA"=dword:00000000
-"PromptOnSecureDesktop"=dword:00000000
-"ValidateAdminCodeSignatures"=dword:00000000
-
 ;EDGE
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MicrosoftEdgeUpdate.exe]
 "Debugger"="C:\noop.exe"
